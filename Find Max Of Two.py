@@ -3,7 +3,7 @@ def max(a,b):
         return a
     else:
         return b
-print('Enter the first number')
+print('Enter the first number')   # Input from the user
 aA = input()
 print('Enter the second number')
 bB = input()
