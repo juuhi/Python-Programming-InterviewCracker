@@ -2,11 +2,12 @@
 #same written backwards). For example, is_palindrome("radar") should return True.
 
 def is_palindrome(text):
-    return text == text[::-1]
+    return text.lower() == text[::-1].lower()
 
-print("Enter the text")
-text = input()
-print("output is " +str(is_palindrome(text)))
+print "output is " +str(is_palindrome('Radar'))
+assert is_palindrome('Radar')
+assert is_palindrome('Deled')
+
 
 """def is_palindrome(text): (complexity increses using if, else condition)
     text1 = text[::-1]
