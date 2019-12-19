@@ -3,6 +3,6 @@ def unstretchword(word):
   
 print(unstretchword('haaappppyy'))
 
------------------------------------------
-output :- hapy
+#-----------------------------------------
+#output :- hapy
 
