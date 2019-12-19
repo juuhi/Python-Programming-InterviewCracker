@@ -13,14 +13,14 @@ Minimize the total number of operations.
 
 #1st: Using the inbuild functions
 
-# def moveZeroes(list):
-#     for e in range(0, len(list)):
-#         if e == 0:
-#             list.remove(e)
-#             list.append(e)
-#     return list
-#
-# print(moveZeroes([1,2,3,4,0,1]))
+def moveZeroes(list):
+    for e in range(0, len(list)):
+        if e == 0:
+            list.remove(e)
+            list.append(e)
+    return list
+
+print(moveZeroes([1,2,3,4,0,1]))
 
 #2nd: Using loops
 
