@@ -20,3 +20,15 @@ def twoSum(nums, target):
 
 
 print(twoSum([2,3,4], 7))
+
+############
+def twoSum(nums, target):
+        if len(nums) <= 1:
+            return False
+        buff_dict = {}
+        print(buff_dict)
+        for i in range(len(nums)):  # 0,1...4 len is 5
+            if nums[i] in buff_dict:  # nums[0] = 1
+                return [buff_dict[nums[i]], i]
+            else:
+                buff_dict[target - nums[i]] = i   # dict[9-1] = dict[8] = 0 , dict [7] = 1 dic[6] = 2 dict[5] = 3
