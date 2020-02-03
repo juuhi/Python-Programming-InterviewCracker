@@ -30,6 +30,9 @@ For the purpose of this problem, we will return 0 when needle is an empty string
 
 # split function takes two arguments (str.split(separator, maxsplit))
 
+#maxsplit : It is a number, which tells us to split the string into maximum of provided number of times. 
+#If it is not provided then there is no limit.
+
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         if len(needle) == 0:
