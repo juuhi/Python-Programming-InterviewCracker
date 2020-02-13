@@ -16,6 +16,8 @@ def array_count9(nums):
           i=i+1
   return count
 
+# else statment is not required for this (Updated: Feb 13)
+
 print array_count9([1, 2, 9])
 print array_count9([1, 9, 9])
 print array_count9([1, 9, 9, 3, 9,9])
