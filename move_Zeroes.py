@@ -37,3 +37,17 @@ def moveZeroes(list):
     return list
 
 print(moveZeroes([1,0,2,3,0]))
+
+############################### 3rd effective way ########
+
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        num_zeros = nums.count(0)
+        non_zeros = 0
+        
+        for i in nums:
+            if i!=0:
+                nums[non_zeros] = i.        # shift the non zero to the left and add zero at the last = count of zeros
+                non_zeros += 1
+        for zero in range(1, num_zeros+1):
+            nums[-zero] = 0
