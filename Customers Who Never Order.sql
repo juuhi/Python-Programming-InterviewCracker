@@ -27,8 +27,13 @@ Using the above tables as example, return the following:
 | Max       |
 +-----------
 
-#####################
+##################### Use NOT EXISTS instead of NOT IN as NOT EXISTS do not return null values while not in does.
 
+select c.Name as Customers
+from Customers as c
+where NOT EXISTS (Select * from Orders as o where c.Id = o.CustomerId)
+
+########################################
 # Write your MySQL query statement below
 
 select Name as Customers
