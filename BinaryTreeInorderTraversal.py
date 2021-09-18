@@ -27,15 +27,14 @@ class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         stack = []  # data strucvture to store the node value
         res = []
-        if root is None:
-            return []
-        while root in not None or stack != []:
-            while root in not None:
+        while root is not None or stack != []:
+            while root is not None:
                 stack.append(root)
                 root = root.left
             root = stack.pop()
-            res = res.append(root.val)
+            res.append(root.val)
             root = root.right
+        return res
             
  
 
