@@ -1,9 +1,9 @@
 """juhiNewYork"""
 
 def count_words(string):
-    total = 1
+    total = 0
     for i in string:
-        if i.isupper():
+        if i.upper():
             total += 1
     return total
 
